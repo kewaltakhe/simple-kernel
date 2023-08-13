@@ -1,0 +1,37 @@
+======= changes from os-v2 to os-v3 ========
+
+1. put header guards.
+2. Standarise types in cpu/types.h
+3. Change the use of C types to types in cpu/types.h accordingly.
+
+
+===GDT DESCRIPTOR OFFSET====
+
++--------------------+ 0x0
+| null descr         |
++--------------------+ 0x07,0x08(8)
+| code-segment descr |
++--------------------+ 0x0F,0x10(10)
+| data-segment descr |
++--------------------+ 0x17(23)
+
+
+
+======= upgrade from os-v2 to os-v3 ========
+
+1. Set up gdt descriptors for IRQs
+2. Put IRQ handler
+
+[8259 PIC]
+
+    CPU interrupt pin 
+        |
++-------|---------+
+|       PIC1      |
+| 0 1 2 3 4 5 6 7 |
++-|-|-|-|-|-|-|-|-+ IRQ
+      |
++-----|-----------+
+|      PIC@       |
+| 0 1 2 3 4 5 6 7 |
++-|-|-|-|-|-|-|-|-+ IRQ
