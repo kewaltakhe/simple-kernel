@@ -25,7 +25,6 @@ make clean
 make
 make run
 ```
-
 ### experiment 1: print A string using kernel routine kprint.
 The `main` function of `kernel/kernel.c` is the entry point the operating system. All the functions of the OS should emerge from this `main` function. To tell kernel to print a string,  edit `kernel/kernel.c`
 ```c
@@ -39,7 +38,28 @@ void main(){
 }
 
 ```
+qemu output
 ![Screenshot](./screenshots/print_kernel_routine.png)
+
+### experiment 2: detect which key is pressed.
+Edit `kernel/kernel.c` and use `init_keyboard` routine
+
+```c
+void main(){
+    isr_install();
+    clear_screen();
+    __asm__("sti");
+    //__asm__ __volatile__("int $10");
+    //init_timer(50);
+    char myString[] = "Testing kernel routine init_keyboard that detects keypress.\n\n";
+    kprint(myString);
+    init_keyboard();
+}
+```
+![Screenshot](./screenshots/keyboard_interrupt.gif)
+
+
+
 ## Acknowledgement
 - One of the best hands-on book [Writing a Simple Operating System — from Scratch by Nick Blundell](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf). I wish the book was longer.
 - A detailed tutorial- [os-tutorial](https://github.com/cfenollosa/os-tutorial)
