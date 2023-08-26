@@ -39,7 +39,7 @@ void main(){
 }
 
 ```
-![Screenshot](./screenshots/BIOS_Routine_print.png)
+![Screenshot](./screenshots/print_kernel_routine.png)
 ## Acknowledgement
 - One of the best hands-on book [Writing a Simple Operating System — from Scratch by Nick Blundell](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf). I wish the book was longer.
 - A detailed tutorial- [os-tutorial](https://github.com/cfenollosa/os-tutorial)
