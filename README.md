@@ -37,8 +37,9 @@ void main(){
     char myString[] = "Hello, World! This string is printed using kernel routine kprint through the screen driver.";
     kprint(myString);
 }
-```
 
+```
+![Screenshot](./screenshots/BIOS_Routine_print.png)
 ## Acknowledgement
 - One of the best hands-on book [Writing a Simple Operating System — from Scratch by Nick Blundell](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf). I wish the book was longer.
 - A detailed tutorial- [os-tutorial](https://github.com/cfenollosa/os-tutorial)
