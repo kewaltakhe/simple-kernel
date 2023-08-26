@@ -4,19 +4,6 @@ A simple bootloader for x86 machine. It contains a kernel with screen driver. Th
 During my college years, I learned about computer system architecture and operating systems. While I gained insights through separate experiments, I always wanted a more holistic understanding of the intricate connection between hardware and software.<br><br>
 This project, born from that curiosity, provides a hands-on exploration of the fascinating journey from computer hardware to software. It experiments with BIOS loading the bootsector, Memory-mapped device drivers. Then, step by step, towards a kernel using the higher-level language C is created. This project acts as an entry point to the process of building an operating system from scratch.
 
-## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
-## About
-
-
 ## Features Included
 In this repository, instead of making separate folders and walking through each steps, I have uploaded a working version of the project. This includes (in order)
 
@@ -39,3 +26,8 @@ make
 make run
 ```
 
+## Screenshots
+
+## Acknowledgement
+- One of the best hands-on book [Writing a Simple Operating System — from Scratch by Nick Blundell](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf). I wish the book was longer.
+- A detailed tutorial- [os-tutorial](https://github.com/cfenollosa/os-tutorial)
