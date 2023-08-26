@@ -25,6 +25,14 @@ make clean
 make
 make run
 ```
+[NOTE] The screenshots are not displaying if Jio network(cellular or fibre) is used. It displays for other service providers.<br>
+For every change, run 
+```
+make clean
+make
+make run
+```
+
 ### experiment 1: print A string using kernel routine kprint.
 The `main` function of `kernel/kernel.c` is the entry point the operating system. All the functions of the OS should emerge from this `main` function. To tell kernel to print a string,  edit `kernel/kernel.c`
 ```c
