@@ -46,7 +46,7 @@ void main(){
 }
 
 ```
-qemu output
+[qemu output screenshot]
 ![Screenshot](./screenshots/print_kernel_routine.png)
 
 ### experiment 2: detect which key is pressed.
@@ -64,6 +64,7 @@ void main(){
     init_keyboard();
 }
 ```
+[qemu output screenshot]
 ![Screenshot](./screenshots/keyboard_interrupt.gif)
 
 
